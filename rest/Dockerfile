@@ -71,6 +71,10 @@ ADD start-machine-agent.sh /usr/local/bin/start-machine-agent
 ADD start-tomcat.sh /usr/local/bin/start-tomcat
 ADD start-all.sh /usr/local/bin/start-all
 
+ADD AppServerAgent-4.5.2.24246.zip /agents/
+ADD dbagent-4.5.2.818.zip /agents/
+ADD MachineAgent-4.5.2.1611.zip /agents/
+
 RUN chmod +x /usr/local/bin/start-db-agent
 RUN chmod +x /usr/local/bin/start-machine-agent
 RUN chmod +x /usr/local/bin/start-tomcat
