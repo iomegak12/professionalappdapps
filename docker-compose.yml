@@ -8,13 +8,10 @@ services:
     container_name: rest
     image: appdynamics/sample-app-rest
     environment:
-      - CONTROLLER_URL=
-      - CONTROLLER_PORT=
-      - CONTROLLER_ACCOUNT_NAME=
-      - CONTROLLER_ACCESS_KEY=
-      - PORTAL_USERNAME=
-      - PORTAL_PASSWORD=
-      - AGENT_VERSION=
+      - CONTROLLER_URL=senator201810150018026.saas.appdynamics.com
+      - CONTROLLER_PORT=443
+      - CONTROLLER_ACCOUNT_NAME=senator201810150018026
+      - CONTROLLER_ACCESS_KEY=n7ebhk1b50fn
     links:
       - db
     ports: 
@@ -35,10 +32,10 @@ services:
     container_name: web
     image: appdynamics/sample-app-web
     environment:
-      - CONTROLLER_URL=
-      - CONTROLLER_PORT=
-      - CONTROLLER_ACCOUNT_NAME=
-      - CONTROLLER_ACCESS_KEY=
+      - CONTROLLER_URL=senator201810150018026.saas.appdynamics.com
+      - CONTROLLER_PORT=443
+      - CONTROLLER_ACCOUNT_NAME=senator201810150018026
+      - CONTROLLER_ACCESS_KEY=n7ebhk1b50fn
       - APP_ID=
     links:
       - rest
